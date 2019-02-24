@@ -342,6 +342,7 @@
 		2D02E47B1E0B4A5D006451C7 /* AwesomeProject-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AwesomeProject-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* AwesomeProject-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AwesomeProject-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBC559A8639CBA7169C9644 /* Pods-AwesomeProject.releaseltvpro.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.releaseltvpro.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.releaseltvpro.xcconfig"; sourceTree = "<group>"; };
 		58A895E862FF3FCB37EDA38C /* Pods-AwesomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -623,6 +624,7 @@
 			children = (
 				58A895E862FF3FCB37EDA38C /* Pods-AwesomeProject.debug.xcconfig */,
 				AA0716A852C099A539225785 /* Pods-AwesomeProject.release.xcconfig */,
+				3BBC559A8639CBA7169C9644 /* Pods-AwesomeProject.releaseltvpro.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1439,7 +1441,7 @@
 		};
 		2E718A912222B00900EDA3A1 /* ReleaseLtvpro */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0716A852C099A539225785 /* Pods-AwesomeProject.release.xcconfig */;
+			baseConfigurationReference = 3BBC559A8639CBA7169C9644 /* Pods-AwesomeProject.releaseltvpro.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
