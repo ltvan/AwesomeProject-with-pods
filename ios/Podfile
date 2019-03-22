@@ -35,5 +35,16 @@ post_install do |installer|
         if target.name == "React"
             target.remove_from_project
         end
+        if target.name == "Pods-AwesomeProject"
+            target.build_configurations.each do |config|
+                if config.name.start_with?("Release")
+                    puts "Updating #{target.name}:#{config.name} OTHER_LDFLAGS"
+                    xcconfig_path = config.base_configuration_reference.real_path
+                    xcconfig = File.read(xcconfig_path)
+                    new_xcconfig = xcconfig.sub('-l"React" ', '')
+                    File.open(xcconfig_path, "w") { |file| file << new_xcconfig }
+                end
+            end
+        end
     end
 end
